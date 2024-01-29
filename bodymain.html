@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="лендинг архива ГГУ">
+    <meta name="keywords" content="html, css, js">
+    <meta name="author" content="Любовь">
+    <link rel="stylesheet" href="normalize.css"> <!--Сначала normalize.css -->
+    <link rel="stylesheet" href="styles/style.css"><!-- Потом свои стили -->
+    <link rel="stylesheet" href="styles/stylebody.css">
+    <title>Архив ГГУ</title>
+    <link rel="icon" type="image/png" href="images\logo.png" />
+  </head>
+  <body class="gzhel">
+    <header class="header top darkbackground">
+      <div class="found">
+        <h1>Основан в</h1>
+        <h1>1899 году</h1>
+      </div>
+      <div class="arhiv">
+        <h1>Гжельский государственный университет</h1>
+        <h1>Архив</h1>
+      </div>
+      <div class="counter">
+        <h1>Мы с Вами</h1>
+        <h1 id="timeLeft"></h1>
+        <script src="js/script.js"></script>
+      </div>
+    </header>
+  <div class="page">
+      <div class="column">
+          <ul class="nav_list">
+            <li><a href='https://www.art-gzhel.ru/' class="nav-link" target="_blank">История</a></li>
+            <li><a href='https://www.art-gzhel.ru/?param=infa&sub=obuchams&sub_open=12' class="nav-link" target="_blank">Инфо</a></li>
+            <li><a href='https://www.art-gzhel.ru/?param=infa&sub=nauk_and_univer' class="nav-link" target="_blank">Ссылки</a></li>
+          </ul>
+      </div>
+      <div class="slider">
+        <img src="https://arnoldmiqayel.files.wordpress.com/2022/10/2-4.jpg" alt="" class="slider_picture">
+      <div class="content__text-cover">
+        <div class="content__text-container">
+          <p class="content_title slider_content_position">Гжель это хорошо</p>
+          <p class="content__text slider_content_position">Здесь должна быть история об этом</p>
+        </div>
+      </div>
+      </div>
+        <div class="flex-row column">
+            <ul class="nav_list">
+              <li><a href='https://www.art-gzhel.ru/' class="nav-link" target="_blank">Новости</a></li>
+            </ul>
+          </div>
+  </div>
+    <div class="main_info">
+      <div class="news table-block">
+        <img src="https://avatars.mds.yandex.net/i?id=da2a98d7ee7f3e7513f01fd1ddb15978ce4bf4e1-10477521-images-thumbs&n=13" alt="" class="news_picture">
+      </div>
+      <div class="info table-block">
+        <img src="https://avatars.mds.yandex.net/i?id=b71197d8442b6951f3c2a1766907ef512013783f-10876270-images-thumbs&n=13" alt="" class="news_picture">
+      </div>
+      <div class="lowers table-block"></div>
+      <div class="feetback table-block"></div>
+    </div>
+
+    <main class="content">
+      <h1 class="main-title">Напишите нам:</h1>
+      <form class="contact-form">
+        <label for="name" class="contact-form__label">Имя:</label>
+        <input type="text" id="name" class="contact-form__input">
+        <label for="email" class="contact-form__label">E-mail:</label>
+        <input type="email" id="email" class="contact-form__input">
+        <label for="message" class="contact-form__label">Сообщение:</label>
+        <textarea id="message" class="contact-form__textarea"></textarea>
+        <input type="submit" value="Отправить" class="contact-form__button">
+      </form>
+
+    </main>
+</body>
+</html>

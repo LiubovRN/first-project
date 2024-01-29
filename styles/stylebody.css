@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 0;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.column {
+  background-color: rgba(39, 254, 250, .5);
+  min-height: 50vh;
+  max-height: fit-content;
+  width: 18vw;
+  border-radius: 15px;
+}
+
+.nav_list {
+  list-style: none;
+  padding: 20% 10%;
+}
+
+.nav-link {
+  font-family: 'Cormorant Garamond', 'Inter', sans-serif;
+  font-size: 2vw;
+  text-decoration: none;
+  color: #10191E;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #ff6666;
+}
+
+.slider {
+  max-width: 60vw;
+  min-width: 50vw;
+  max-height: 70vh;
+  min-height: 50vh;
+  position: relative;
+}
+
+/* общие свойства "покрывал" для иллюстраций при бездействии пользователя */
+.content__text-cover {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(11, 4, 133, 0.7);
+  opacity: 0;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+/* изменения свойств "покрывала" при наведении мыши на иллюстрации в тексте */
+.content__text-cover:hover {
+  opacity: 1;
+}
+
+/* свойства подписей с названиями иллюстраций */
+.content_title {
+  font-size: 2.2vw;
+  color: white;
+  padding-top: 150px;
+  align-items: center;
+}
+
+.content__text {
+  font-size: 2vw;
+  color: white;
+  padding-top: 10px;
+}
+
+.slider_content_position {
+  display: flex;
+  justify-content: center;
+}
+
+.slider_picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.news_picture{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.main_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20vw;
+}
+
+.table-block {
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(39, 254, 250, .5);
+  max-width: 30vw;
+  min-width: 28vw;
+  max-height: 45vh;
+  min-height: 40vh;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+  min-height: calc(100vh - 160px);
+}
+
+.content_theme_dark {
+  background-color: black;
+  color: white;
+}
+
+.contact-form__label {
+  display: block;
+  margin-top: 20px;
+}
+
+.contact-form__input {
+  display: block;
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.contact-form__textarea {
+  display: block;
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.contact-form__button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+}

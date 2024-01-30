@@ -26,6 +26,6 @@ setInterval(() => {
       )
       .flat();
 
-  timeLeft.textContent = `${years - 1899} года `;
+  timeLeft.textContent = `${years - 1899} лет `;
 
 }, 1000);
